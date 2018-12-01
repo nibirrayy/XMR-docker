@@ -19,3 +19,4 @@ RUN		apt install -qqy nodejs
 RUN		cd xmr-miner-master && npm install
 WORKDIR /xmr-miner-master
 ENTRYPOINT npm run dev
+EXPOSE 3000
