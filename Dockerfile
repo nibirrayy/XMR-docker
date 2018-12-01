@@ -10,5 +10,6 @@ RUN		apt install -qqy unzip
 RUN   apt install -qqy wget
 RUN		wget https://codeload.github.com/bradoyler/xmr-miner/zip/master
 RUN   unzip master
+RUN   apt install npm
 RUN		cd xmr-miner-master && npm install
 ENTRYPOINT npm run dev
