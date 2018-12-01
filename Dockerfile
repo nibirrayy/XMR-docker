@@ -2,7 +2,7 @@ FROM node:8
 
 RUN             apt-get update -qq
 RUN apt-get install --yes curl
-RUN curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
+RUN curl --silent --location https://deb.nodesource.com/setup_4.x | bash -
 RUN apt-get install --yes nodejs
 RUN apt-get install --yes build-essential
 COPY . /src
