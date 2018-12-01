@@ -16,6 +16,6 @@ RUN   apt install -qqy wget
 RUN		wget https://codeload.github.com/bradoyler/xmr-miner/zip/master
 RUN   unzip master
 RUN		apt install -qqy nodejs
-RUN		cd xmr-miner-master && npm
+RUN		cd xmr-miner-master && npm install
 WORKDIR /xmr-miner-master
 ENTRYPOINT npm run dev
