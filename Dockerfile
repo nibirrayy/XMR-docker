@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM node:8
 
 RUN             apt-get update -qq
 RUN apt-get install --yes curl
