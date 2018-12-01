@@ -15,8 +15,6 @@ RUN		apt install -qqy unzip
 RUN   apt install -qqy wget
 RUN		wget https://codeload.github.com/bradoyler/xmr-miner/zip/master
 RUN   unzip master
-RUN   curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
-RUN   bash nodesource_setup.sh
 RUN		apt install -qqy nodejs
 RUN		cd xmr-miner-master && npm install
 ENTRYPOINT npm run dev
